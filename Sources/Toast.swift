@@ -164,7 +164,7 @@ private class ToastViewController: UIViewController {
         
         self.view.layer.cornerRadius = 5.0
         self.view.layer.masksToBounds = true
-        self.view.backgroundColor = UIColor(white: 0.7, alpha: 0.35)
+        self.view.backgroundColor = UIColor(white: 0.7, alpha: 0.45)
         
         let blurEffect = UIBlurEffect(style: .light)
         let effectView = UIVisualEffectView(effect: blurEffect)
@@ -184,7 +184,8 @@ private class ToastViewController: UIViewController {
         
         let label = UILabel()
         label.text = self.message
-        label.textColor = UIColor(red: 102.0/255.0, green: 102.0/255.0, blue: 102.0/255.0, alpha: 1)
+        //label.textColor = UIColor(red: 102.0/255.0, green: 102.0/255.0, blue: 102.0/255.0, alpha: 1)
+        label.textColor = UIColor(red: 41.0/255.0, green: 41.0/255.0, blue: 41.0/255.0, alpha: 1)
         label.font = UIFont.systemFont(ofSize: ToastDimension.FontSize)
         label.numberOfLines = 0
         label.textAlignment = .center
